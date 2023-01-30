@@ -3,7 +3,7 @@
 function parseProducts(json) {
 
     let data = JSON.parse(json)
-    let products = products.data
+    let products = data.products
     return products
 
     // Аргументом функции является JSON
@@ -23,7 +23,6 @@ function renderProductsCards(json){
         for (let i = 0; i < length; i += 1) {
             addProduct(products[i]);
      }
-
  }
 
 // Напишите функцию renderProductsCards(json)
